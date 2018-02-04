@@ -168,16 +168,18 @@ $clients = PersonData::getClients();
 		discount = $("#discount").val();
 		money = $("#money").val();
 		if(money<(<?php echo $total;?>-discount)){
-			//alert("No se puede efectuar la operacion");
 			swal("Error de Operacion!", "Revise las cantidades de Dinero!", "error");
 			e.preventDefault();
 		}else{
 			if(discount==""){ discount=0;}
-			go = confirm("Cambio: $"+(money-(<?php echo $total;?>-discount )));
+			go = confirm("Cambio: $"+(money-(<//?php echo $total;?>-discount ) ) );
 			//swal("Correcto!", " "+(money-(<//?php echo $total;?>-discount ) ), "question");
-			if(go){}
-				else{e.preventDefault();}
-		}
+			if(go){
+			}
+				else{
+					e.preventDefault();
+					}
+			}
 	});
 </script>
 </div>
