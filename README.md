@@ -10,7 +10,3 @@ PROBADO PARA GIT
 - Proveedores
 - Inventario
 - Usuarios
-
-## Mas informacion
-Encuentra mas informacion, instrucciones y demos en el siguiente link.
-Link: http://evilnapsis.com/2015/07/11/inventio-lite-sistema-de-inventario-y-ventas/
