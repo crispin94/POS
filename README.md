@@ -10,3 +10,6 @@ PROBADO PARA GIT
 - Proveedores
 - Inventario
 - Usuarios
+
+##
+- SE ANADIO LA LIBRERIA SWITCH ALERT 
