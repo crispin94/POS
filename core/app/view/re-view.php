@@ -140,7 +140,7 @@ $clients = PersonData::getProviders();
 <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Efectivo</label>
     <div class="col-lg-10">
-      <input type="text" name="money" required class="form-control" id="money" placeholder="Efectivo">
+      <input type="number" name="money" required class="form-control" id="money" placeholder="Efectivo">
     </div>
   </div>
   <div class="row">
@@ -181,15 +181,16 @@ $clients = PersonData::getProviders();
   </div>
 </form>
 <script>
-	$("#processsell").submit(function(e){
+		$("#processsell").submit(function(e){
 		money = $("#money").val();
 		if(money<<?php echo $total;?>){
-			alert("No se puede efectuar la operacion");
+			//alert("No se puede efectuar la operacion");
+			swal("Error de Operacion!", "Revise las cantidades de Dinero!", "error");
 			e.preventDefault();
 		}else{
-			go = confirm("Cambio: $"+(money-<?php echo $total;?>));
-			if(go){}
-				else{e.preventDefault();}
+			go = confirm("Cambio: $"+(money-(<?php echo $total;?>)));
+			//swal("Correcto!", " "+(money-(<//?php echo $total;?>)), "question");
+			
 		}
 	});
 </script>
