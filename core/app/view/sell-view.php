@@ -172,7 +172,7 @@ $clients = PersonData::getClients();
 			e.preventDefault();
 		}else{
 			if(discount==""){ discount=0;}
-			go = confirm("Cambio: $"+(money-(<//?php echo $total;?>-discount ) ) );
+			go = confirm("Cambio: $"+(money-(<?php echo $total;?>-discount ) ) );
 			//swal("Correcto!", " "+(money-(<//?php echo $total;?>-discount ) ), "question");
 			if(go){
 			}
@@ -189,3 +189,5 @@ $clients = PersonData::getClients();
 <?php endif; ?>
 
 </div>
+
+ffdghjhgsbxdcfvgbhnjmk
